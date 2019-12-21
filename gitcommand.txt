@@ -1,0 +1,95 @@
+  129  touch /etc/yum.repos.d/wandisco-git.repo
+  130  vi /etc/yum.repos.d/wandisco-git.repo 
+  134  yum install git -y
+  135  git --version
+  136  git config --global user.name "Your Name"
+  137  git config --global user.email "youremail@yourdomain.com"
+  138  git config --global user.email "ankitgup.05@gmail.com"
+  139  git config --global user.name "Your Name"
+  140  git config --global user.name "Rajeshgupta123456789"
+  141  git config --list
+  143  git clone https://github.com/Rajeshgupta123456789/Ankit-Gupta.git
+  148  cd .git
+  157  echo "Hello i am learning git repository" > ankitsimple.txt
+  159  git status
+  160  git add ankitsimple.txt
+  161  git status
+  162  git commit -m "This is first commited file"
+  163  git status
+  164  git push origin master
+  166  mkdir gitrepolearn
+  167  cd gitrepolearn/
+  168  git clone https://github.com/Rajeshgupta123456789/Ankit-Gupta.git
+  171  git pull
+  173  cat gitterminal 
+  174  git branch
+  175  git checkout -b childbranch
+  176  git branch
+  178  git status
+  179  touch gitdemo.txt
+  180  git status
+  181  git add gitdemo.txt 
+  182  git commit -m "this is child"
+  183  git push origin childbranch
+  186  git config --global user.name "Rajeshgupta123456789"
+  187  git config --global user.email "ankitgup.05@gmail.com"
+  188  git config --list
+  189  git clone https://github.com/Rajeshgupta123456789/Gitdemopractise.git
+  194  cd gitrepolearn/
+  204  git status
+  210  touch homepractisegit.txt
+  211  echo "This is practise of GIT repo at home" > homepractisegit.txt 
+  212  git status
+  213  git add homepractisegit.txt 
+  215  git commit -m "This is 2nd repository text file"
+  216  git status
+  217  git push origin master
+  218  git branch
+  219  git checkout -b childbranchgit
+  220  git branch
+  221  touch gitchild.txt
+  222  echo "This is child brnach text" > gitchild.txt 
+  223  git status
+  224  git add gitchild.txt 
+  225  git commit -m "This is childbranch"
+  226  git push origin childbranchgit
+  228  cat gitchild.txt 
+  232  git pull gitpulldemo
+  233  git status
+  234  git checkout -b origin
+  235  git pull gitpulldemo
+  237  git commit gitpulldemo
+  239  git pull gitpulldemo origin master
+  240  git branch
+  241  git pull gitpulldemo master
+  242  git checkout -b master
+  243  git branch
+  244  git checkout -b master
+  245  git -b master
+  246  git checkout origin
+  247  git checkout master
+  248  git pull gitpulldemo master
+  249  git pull gitpulldemo 
+  250  git merge
+  251  git reset
+  252  git remote add  https://github.com/Rajeshgupta123456789/Gitdemopractise.git
+  253  git remote add -f https://github.com/Rajeshgupta123456789/Gitdemopractise.git
+  254  git remote add -f master https://github.com/Rajeshgupta123456789/Gitdemopractise.git
+  255  git reset --hard
+  257  git reset --hard master
+  258  git reset --hard HEAD
+  316  git pull 
+  320  git pull 
+  321  git status
+  322  git config list
+  323  git config --list
+  327  git clone https://github.com/Rajeshgupta123456789/Gitdemopractise.git
+  329  git clone https://github.com/Rajeshgupta123456789/Gitdemopractise.git
+  331  git clone https://github.com/Rajeshgupta123456789/Gitdemopractise.git
+  340  git pull
+  342  cat gitpulldemo 
+  343  git merge
+  346  git history
+  347  git --help
+  348  history | grep "git"
+  349  history | grep "git" > gitcommand.txt
