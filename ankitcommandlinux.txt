@@ -1,0 +1,571 @@
+    1  ls -l
+    2  touch ankit.txt
+    3  ls -l
+    4  yum update
+    5  yum -y install docker-engine
+    6  cd /etc
+    7  cd yum.repos.d/
+    8  ls -l
+    9  nano CentOS-Base.repo 
+   10  vi CentOS-Base.repo 
+   11  cd ~
+   12  ONBOOT=no
+   13  dhclient
+   14  yum update
+   15  cd /etc/yum.repos.d
+   16  ls -l
+   17  vi docker.repo
+   18  ls -l
+   19  cd ~
+   20  yum -y install docker-engine
+   21  systemctl enable docker
+   22  ps aux | grep docker
+   23  docker images
+   24  cd /usr/bin -ls
+   25  ls
+   26  cd docker
+   27  cd ~
+   28  systemctl enable docker
+   29  yum -y install docker-engine
+   30  cd /etc/yum.repos.d
+   31  ls -l
+   32  vi docker.repo 
+   33  curl -fsSl https://get.docker.com/ | sh
+   34  yum -y update
+   35  curl -fsSl https://get.docker.com/ | sh
+   36  yum install -y yum -utils device-mapper-persistent-data lvm2
+   37  yum install -y yum-utils device-mapper-persistent-data lvm2
+   38  yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   39  yum -config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   40  yum install docker-ce
+   41  yum install -y yum-utils device-mapper-persistent-data lvm2
+   42  yum -y upgrade
+   43  yum -y install docker
+   44  yum install epel-release
+   45  yum install docker
+   46  docker -h
+   47  yum install docker
+   48  yum install docker
+   49  yum install -y yum-utils device-mapper-persistent-data lvm2
+   50  yum -config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   51  yum  -config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   52  yum - config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   53  yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   54  yum install docker-ce
+   55  docker -h
+   56  systemctl enable docker
+   57  systemctl status docker
+   58  service docker status
+   59  docker images
+   60  docker pull ubuntu
+   61  service docker start
+   62  docker pull ubuntu
+   63  docker pull ubuntu:latest
+   64  docker images
+   65  docker run -it ubuntu:latest /bin/bash
+   66  docker ps -a
+   67  docker commit 00fc816cfa90 ubuntu:apache2
+   68  docker ps -a
+   69  docker images
+   70  docker start ubuntu:apache2
+   71  docker attach ubuntu:apache2
+   72  docker attach ubuntu
+   73  docker attach apache2
+   74  docker ps -a
+   75  docker attach hungry_newton
+   76  docker start hungry_newton
+   77  docker attach hungry_newton
+   78  docker images
+   79  docker container ls
+   80  docker container ls
+   81  docker container
+   82  docker container ls
+   83  docker start hungry_newton
+   84  docker attach hungry_newton
+   85  docker ps -a
+   86  docker commit apache ubuntu:latest
+   87  docker commit hungry_newton ubuntu:latest
+   88  docker ps -a
+   89  docker images
+   90  docker run -it --name commitcontainer /bin/bash
+   91  docker run -it --name container /bin/bash
+   92  docker run -it --name container ubuntu:latest /bin/bash
+   93  docker container ls
+   94  docker ps -a
+   95  exit
+   96  clear
+   97  docker commit apache ubuntu:latest
+   98  docker images
+   99  docker image id
+  100  docker pull centos:centos6
+  101  docker images
+  102  docker run -it --name centos centos:centos6 /bin/bash
+  103  docker images
+  104  docker container ls
+  105  docker ps -a
+  106  docker commit cd8866b8866d centos:httpdelinks
+  107  docker run -it --name itcamefromhttpdelink centos:httpdelinks /bin/bash
+  108  docker container ls
+  109  docker container ps -a
+  110  clear
+  111  yum -y update
+  112  docker images
+  113  docker image history ubuntu:apache2 --no-trunc
+  114  docker image history ubuntu:apache2 
+  115  docker ps -a
+  116  docker container stats itcamefromhttpdselink
+  117  docker container stats itcamefromhttpdelink
+  118  clear
+  119  docker container ls -a -q
+  120  docker container ls -a -f status=exited
+  121  docker container ls -a -f status=exited | wc -l
+  122  docker container ls
+  123  docker container ls -a -f status=exited | grep itcamefromhttpdelink
+  124  docker network create testnetwork
+  125  docker network ls
+  126  clear
+  127  history
+  128  getenforce
+  129  touch /etc/yum.repos.d/wandisco-git.repo
+  130  vi /etc/yum.repos.d/wandisco-git.repo 
+  131  rpm --import
+  132  rpm --importhttp://opensource.wandisco.com/RPM-GPG-KEY-WANdisco
+  133  rpm --import http://opensource.wandisco.com/RPM-GPG-KEY-WANdisco
+  134  yum install git -y
+  135  git --version
+  136  git config --global user.name "Your Name"
+  137  git config --global user.email "youremail@yourdomain.com"
+  138  git config --global user.email "ankitgup.05@gmail.com"
+  139  git config --global user.name "Your Name"
+  140  git config --global user.name "Rajeshgupta123456789"
+  141  git config --list
+  142  pwd
+  143  git clone https://github.com/Rajeshgupta123456789/Ankit-Gupta.git
+  144  ls -l
+  145  cd Ankit-Gupta/
+  146  ls -l
+  147  ls -la
+  148  cd .git
+  149  ls -l
+  150  ls -la
+  151  vi config
+  152  clear
+  153  cd ..
+  154  cd Ankit-Gupta/
+  155  ls -la
+  156  touch ankitsimple.txt
+  157  echo "Hello i am learning git repository" > ankitsimple.txt
+  158  cat ankitsimple.txt 
+  159  git status
+  160  git add ankitsimple.txt
+  161  git status
+  162  git commit -m "This is first commited file"
+  163  git status
+  164  git push origin master
+  165  cd ..
+  166  mkdir gitrepolearn
+  167  cd gitrepolearn/
+  168  git clone https://github.com/Rajeshgupta123456789/Ankit-Gupta.git
+  169  cd Ankit-Gupta/
+  170  ls -la
+  171  git pull
+  172  ls -l
+  173  cat gitterminal 
+  174  git branch
+  175  git checkout -b childbranch
+  176  git branch
+  177  ls -l
+  178  git status
+  179  touch gitdemo.txt
+  180  git status
+  181  git add gitdemo.txt 
+  182  git commit -m "this is child"
+  183  git push origin childbranch
+  184  clear
+  185  cd ..
+  186  git config --global user.name "Rajeshgupta123456789"
+  187  git config --global user.email "ankitgup.05@gmail.com"
+  188  git config --list
+  189  git clone https://github.com/Rajeshgupta123456789/Gitdemopractise.git
+  190  ls -la
+  191  cd Gitdemopractise/
+  192  ls -la
+  193  cd ..
+  194  cd gitrepolearn/
+  195  ls -la
+  196  cd Ankit-Gupta/
+  197  ls -la
+  198  cd ..
+  199  ls -la
+  200  clear
+  201  touch homepractise.txt
+  202  echo "Hello i am practising Git repo" > homepractise.txt 
+  203  cat homepractise.txt 
+  204  git status
+  205  ls -la
+  206  rm -f homepractise.txt 
+  207  clear
+  208  ls -la
+  209  cd Gitdemopractise/
+  210  touch homepractisegit.txt
+  211  echo "This is practise of GIT repo at home" > homepractisegit.txt 
+  212  git status
+  213  git add homepractisegit.txt 
+  214  ls -la
+  215  git commit -m "This is 2nd repository text file"
+  216  git status
+  217  git push origin master
+  218  git branch
+  219  git checkout -b childbranchgit
+  220  git branch
+  221  touch gitchild.txt
+  222  echo "This is child brnach text" > gitchild.txt 
+  223  git status
+  224  git add gitchild.txt 
+  225  git commit -m "This is childbranch"
+  226  git push origin childbranchgit
+  227  ls -l
+  228  cat gitchild.txt 
+  229  cd ..
+  230  ls -la
+  231  cd Gitdemopractise/
+  232  git pull gitpulldemo
+  233  git status
+  234  git checkout -b origin
+  235  git pull gitpulldemo
+  236  history
+  237  git commit gitpulldemo
+  238  ls -la
+  239  git pull gitpulldemo origin master
+  240  git branch
+  241  git pull gitpulldemo master
+  242  git checkout -b master
+  243  git branch
+  244  git checkout -b master
+  245  git -b master
+  246  git checkout origin
+  247  git checkout master
+  248  git pull gitpulldemo master
+  249  git pull gitpulldemo 
+  250  git merge
+  251  git reset
+  252  git remote add  https://github.com/Rajeshgupta123456789/Gitdemopractise.git
+  253  git remote add -f https://github.com/Rajeshgupta123456789/Gitdemopractise.git
+  254  git remote add -f master https://github.com/Rajeshgupta123456789/Gitdemopractise.git
+  255  git reset --hard
+  256  ls -la
+  257  git reset --hard master
+  258  git reset --hard HEAD
+  259  cd ..
+  260  ls -l
+  261  clear
+  262  setenforce 0
+  263  setenforce 1
+  264  sestatus
+  265  cd /etc/selinux/config 
+  266  vi /etc/selinux/config 
+  267  clear
+  268  httpd_t
+  269  touch /.autorebel
+  270  ls -l
+  271  ls -la
+  272  clear
+  273  autorebel=1
+  274  selinux=0
+  275  enforcing=0
+  276  enforcing=1
+  277  touch /.autorebel
+  278  reboot
+  279  clear
+  280  getenforce
+  281  ls -z
+  282  ls -Z
+  283  netstat -Z
+  284  mkdir -Z
+  285  cp -Z
+  286   getsebool -a
+  287  semanage boolean -l
+  288  yum -y install setroubleshoot setroubleshoot-server
+  289  dhclient
+  290  yum -y install setroubleshoot setroubleshoot-server
+  291  reboot
+  292  clear
+  293  journalctl -t setroubleshoot --since=14:20
+  294  date
+  295  journalctl _SELINUX_CONTEXT=system_u:system_r:policykit_t:s0
+  296  clear
+  297  ausearch -m avc -c httpd
+  298  audit2allow -w -a
+  299  audit2allow -a
+  300  audit2allow -a -M mypolicy
+  301  semanage permissive -a httpd_t
+  302  semanage permissive -d httpd_t
+  303  semodule -d permissivedomains
+  304  yum install selinux-policy-mls
+  305  clear
+  306  vi /etc/selinux/config 
+  307  clear
+  308  getenforce
+  309  ls -Z
+  310  history
+  311  touch ankithistory.txt | grep history
+  312  vi ankithistory.txt 
+  313  clear
+  314  history
+  315  clear
+  316  git pull 
+  317  ls -la
+  318  cd Gitdemopractise/
+  319  ls -la
+  320  git pull 
+  321  git status
+  322  git config list
+  323  git config --list
+  324  cd ..
+  325  ls -l
+  326  mkdir ankitdemopull
+  327  git clone https://github.com/Rajeshgupta123456789/Gitdemopractise.git
+  328  cd ankitdemopull/
+  329  git clone https://github.com/Rajeshgupta123456789/Gitdemopractise.git
+  330  dhclient
+  331  git clone https://github.com/Rajeshgupta123456789/Gitdemopractise.git
+  332  service iptable status
+  333  service iptables  status
+  334  service ipfilters  status
+  335  systemctl status firewalld
+  336  clear
+  337  cd ..
+  338  ls -l
+  339  cd Gitdemopractise/
+  340  git pull
+  341  ls -l
+  342  cat gitpulldemo 
+  343  git merge
+  344  history grep | "fetch"
+  345  history | grep "fetch"
+  346  git history
+  347  git --help
+  348  history | grep "git"
+  349  history | grep "git" > gitcommand.txt
+  350  ls -l
+  351  cat gitcommand.txt 
+  352  vi gitcommand.txt 
+  353  ifconfig
+  354  yum install net-tools
+  355  ifconfig
+  356  cd ..
+  357  vi /etc/selinux/config 
+  358  clear
+  359  getenforce
+  360  setenforce=0
+  361  getenforce
+  362  setenforce=1
+  363  getenforce
+  364  vi /etc/selinux/config 
+  365  setenforce=0
+  366  getenforce
+  367  setenforce permissive
+  368  getenforce
+  369  journalctl -t setroubleshoot --since=14:20
+  370  journalctl -t setroubleshoot 
+  371  systemctl disable firewalld
+  372  systemctl enable firewalld
+  373  systemctl stop firewalld
+  374  systemctl status firewalld
+  375  wget https://www.google.com
+  376  yum install wget
+  377  wget https://www.google.com
+  378  journalctl -t setroubleshoot 
+  379  clear
+  380  mkdir linux
+  381  mkdir linuxcommand
+  382  cd linuxcommand/
+  383  touch echo "This demo of echo command" > file.txt
+  384  ls -l
+  385  cat file.txt
+  386  touch echo "This demo of echo command" | file.txt
+  387  touch file.txt > echo"This is demo of echo"
+  388  ls -l
+  389  cat echo
+  390  cat file.txt
+  391  rm -g echo
+  392  rm -f echo
+  393  rm -f echoThis\ is\ demo\ of\ echo 
+  394  rm -f file.txt
+  395  ls -l
+  396  rm -f This\ demo\ of\ echo\ command 
+  397  ls -l
+  398  clear
+  399  echo "This is demo echo command" > file.txt
+  400  cat file.txt 
+  401  uname -a
+  402  cat /etc/os-release 
+  403  chmod 777 file.txt
+  404  cat /proc/cpuinfo 
+  405  df -i
+  406  du
+  407  clear
+  408  cd ..
+  409  mkdir ankitlinux
+  410* cp /file.txt ankitlinux
+  411  cd -
+  412  cp ankit.txt ankitlinux
+  413* ls
+  414  cp file.txt ankitlinux
+  415  cd ..
+  416  ls -l
+  417  cd ankitlinux/
+  418  ls -l
+  419  cd linuxco
+  420  cd ..
+  421  cd linuxcommand/
+  422  ls -l
+  423  vi ankitlinux
+  424  ls -l
+  425  rm -f ankitlinux 
+  426  clear
+  427  cd ..
+  428  ls -l
+  429  cd ankitlinux
+  430  cd ..
+  431  pwd
+  432  cp /home/ankit/linuxcommand/file.txt /home/ankit/ankitlinux/
+  433  cd ankitlinux/
+  434  ls -l
+  435  mv /home/ankit/linuxcommand/file.txt /home/ankit/ankitlinux/file123.txt
+  436  ls -l
+  437  cat file123
+  438  cat file123.txt
+  439  clear
+  440  tar -cvf ankit123.tar
+  441  cd ..
+  442  tar -cvf ankit123.tar
+  443  tar --help
+  444  clear
+  445  mkdir ankit123
+  446  tar -cvf ankit123.tar
+  447  cd ankit123
+  448  touch ankittar.txt
+  449  cd ..
+  450  tar -cvf ankit123.tar
+  451  clear
+  452  find .-name ankit.txt
+  453  find .-name file.txt
+  454  find . -name file.txt
+  455  find /home -name ankit.txt
+  456  find /home -name file.txt
+  457  find /type -d . -ankit
+  458  find /type -d -name ankit
+  459  find / type -d -name ankit
+  460  find / type d -name ankit
+  461  find /- type d -name ankit
+  462  find / -type d -name ankit
+  463  find / -type f -name file.txt
+  464  find . -type f -name file.txt
+  465  find . -type f -name *.txt
+  466  find . -type f -name "*.txt"
+  467  find . -type f -name "*.php"
+  468  find . -type perm 0777
+  469  find . -type f perm 0777
+  470  find . -type f -perm 0777
+  471  find . -type d -perm 0777
+  472  find / -type f -perm! 0777
+  473  find / -type f! -perm 0777
+  474  find / -type f ! -perm 0777
+  475  find / -type d ! -perm 0777
+  476  find / perm a-u
+  477  find / perm /u=a
+  478  find / -perm /u=a
+  479  find / -perm /u=r
+  480  find / -perm /a=x
+  481  find / -type f -perm 0777 -print -exec chmod{} \;
+  482  find / -type f -perm 0777 -print -exec chmod 644 {} \;  
+  483  find / -type f -name file.txt
+  484  find / -type d -perm 0777 -print -exec chmod 644 {} \;
+  485  find . -type f -name "ankit.txt" -exec rm -f {} \;
+  486  ls -l
+  487  find /tmp -type f -empty
+  488  find /tmp -type d -empty
+  489  find / -mtime -50
+  490  find / -size +50M
+  491  find / -size 50M
+  492  find / -size +50M -size -100M
+  493  ifconfig
+  494  history
+  495  history | grep ankitlinuxcommand.txt
+  496  ls -l
+  497  history | ankitlinuxcommand.txt
+  498  history | grep > ankitlinuxcommand.txt
+  499  grep --help
+  500  history | grep < ankitlinuxcommand.txt
+  501  history | grep "git" > ankitlinuxcommand.txt
+  502  ls -l
+  503  cat ankitlinuxcommand.txt 
+  504  rm -f ankitlinucommand.txt
+  505  history | grep "" > ankitlinuxcommand.txt
+  506  cat ankitlinuxcommand.txt 
+  507  git status
+  508  ls -l
+  509  pwd
+  510  mv /home/ankit/ankitlinuxcommand.txt /home/ankit/Ankit-Gupta/
+  511  cd Ankit-Gupta/
+  512  git status
+  513  git add ankitlinuxcommand.txt 
+  514  git commit ankitlinuxcommand.txt 
+  515  git commit ankitlinuxcommand.txt -m "This a basic linux command"
+  516  git commit ankitlinuxcommand.txt - m "This a basic linux command"
+  517  git commit ankitlinuxcommand.txt -m "This a basic linux command"
+  518  ls -l
+  519  git status
+  520  git branch
+  521  git push ankitlinuxcommand.txt 
+  522  git push ankitlinuxcommand.txt - origin master
+  523  git push origin master
+  524  git clone https://github.com/Rajeshgupta123456789/Ankit-Gupta.git
+  525  git push 
+  526  git status
+  527  git add ankitdire/
+  528  git commit ankitlinuxcommand.txt 
+  529  ls -l
+  530  cd ..
+  531  history | grep "" ankitlinuxbasic.txt
+  532  history | grep " " > ankitlinuxbasic.txt
+  533  ls -l
+  534  cat ankitlinuxbasic.txt 
+  535  pwd
+  536  mv ankitlinuxbasic.txt /home/ankit/Ankit-Gupta/
+  537  cd Ankit-Gupta/
+  538  ls -l
+  539  rm -f ankitlinuxcommand.txt 
+  540  git status
+  541  git add ankitlinuxbasic.txt 
+  542  git commit Ankit-Gupta/
+  543  git ankitdire/
+  544  git commit ankitdire/
+  545  git commit Ankit-Gupta/
+  546  git push
+  547  git pull
+  548  cd ..
+  549  ls -l
+  550  cd Gitdemopractise/
+  551  ls -l
+  552  cd ..
+  553  cd Ankit-Gupta/
+  554  ls -l
+  555  mv ankitlinuxbasic.txt /home/ankit/Gitdemopractise/
+  556  cd ..
+  557  cd Gitdemopractise/
+  558  ls -l
+  559  git status
+  560  git add ankitlinuxbasic.txt 
+  561  git commit ankitlinuxbasic.txt 
+  562  git commit ankitlinuxbasic.txt  -m "This is basic command of linux"
+  563  clear
+  564  ls -l
+  565  git push origin master
+  566  git push 
+  567  git branch
+  568  git push origin gitbranchdemo
+  569  ls -l
+  570  rm -f ankitlinuxbasic.txt 
+  571  history | grep "" > ankitcommandlinux.txt
